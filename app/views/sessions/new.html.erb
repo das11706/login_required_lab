@@ -1,0 +1,9 @@
+
+
+
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+  <label>Username: <input name='name'></label>
+  <input type='submit' value='login'>
+<% end %>
+
+<p><%= link_to "Retry login ", sessions_path %></p>
